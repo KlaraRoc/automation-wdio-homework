@@ -19,14 +19,16 @@ import ObjednavkaPage from '../pages/objednavka.page';      //page object patter
 
 
 //-----------------------------------------------------------------------------------
-// NOTE: zde by byly testy stejnych operaci na ruzdnych strankach, 
-//       ale to zatim neumim, proto kod zopakuji
+// NOTE: zde jsou testy menu, ty jsou ale stejne na vsech stankach. Lisi se jen
+//       vychozi strankou. Bylo by vhodne, kdyby byl kod jen jednou a parametrem se
+//       predavala vychozi stranka, tedy dělat asi funkci. Takto to ale zatim neumim,
+//       proto kod zopakuji v souborech index.e2e.js a objednavka.e2e.js .
 //
 describe("Navigace memu na strance objednavka", () => {
 
     beforeEach(() => {
         browser.reloadSession();
-        browser.url('/objednavka/pridat');
+        browser.url('/objednavka/pridat');      //zde vychozi stranka kterou se to lisi
     });
 
     it("Test vychoziho stau - menu ma existovat", () => {
