@@ -1,3 +1,5 @@
+// Vkladana data do testu
+
 export const timestamp = Math.floor(Date.now() / 1000);
 export const ICO = 22834958;
 export const clientName = 'Czechitas z.ú.';

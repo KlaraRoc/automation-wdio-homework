@@ -3,7 +3,7 @@ exports.config = {
         './specs/**/*.js'
     ],
     exclude: [
-        './specs/examples/**/*.js'
+        './specs/pagesXXX/**/*.js'
     ],
     maxInstances: 10,
     capabilities: [{
@@ -27,9 +27,9 @@ exports.config = {
             ]
         }
     }],
-    logLevel: 'silent', // trace | debug | info | warn | error | silent
+    logLevel: 'error', // trace | debug | info | warn | error | silent
     bail: 0,
-    baseUrl: 'ADRESA TESTOVANE APLIKACE',
+    baseUrl: 'https://team8-2022brno.herokuapp.com/',
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
